@@ -8,11 +8,9 @@ import pandas as pd
 import joblib
 import numpy as np
 
-# Configuration de la page
 st.set_page_config(page_title="Inclusion Financière", layout="centered")
 
 
-# Charger les fichiers exportés
 @st.cache_resource  # Pour éviter de recharger le modèle à chaque clic
 def load_assets():
     model = joblib.load('model.pkl')
