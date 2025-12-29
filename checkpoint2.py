@@ -19,7 +19,7 @@ from sklearn.ensemble import RandomForestClassifier
 from imblearn.over_sampling import SMOTE
 from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
 
-df=pd.read_csv("/Users/anass/PycharmProjects/PythonProject1/Financial_inclusion_dataset.csv")
+df=pd.read_csv("Financial_inclusion_dataset.csv")
 df.head()
 
 df.info()
